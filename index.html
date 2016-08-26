@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Islandora: Drupal Blocks Integration</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+		<link rel="stylesheet" href="css/overrides.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <!-- Title slide -->
+        <section data-markdown="slides/01-title.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Introductions -->
+        <section data-markdown="slides/02-intro.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Overview -->
+        <section data-markdown="slides/03-overview.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- XACML -->
+        <section data-markdown="slides/04-islandora.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- OG -->
+        <section data-markdown="slides/05-drupal.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Problem -->
+        <section data-markdown="slides/06-problem.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Solutions -->
+        <section data-markdown="slides/07-solutions.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Solution -->
+        <section data-markdown="slides/08-solution.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Examples -->
+        <section data-markdown="slides/09-examples.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+        <!-- Outro -->
+        <section data-markdown="slides/10-outro.md"
+          data-separator-vertical="^\n\n"
+          data-separator-notes="^Notes:"></section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
